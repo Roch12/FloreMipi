@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+<meta charset="UTF-8"/>
+	<title><h:outputText value="titre" /></title>
+	<h:outputStylesheet name="css/bootstrap.min.css" />
+	<h:outputStylesheet name="css/bootstrap-theme.min.css" />
+	<h:outputStylesheet name="css/styles.css" />
+	<h:outputScript name="js/jquery-2.1.1.min.js" />
+	<h:outputScript name="js/jquery-ui-1.10.4.min.js" />
+	<h:outputScript name="js/bootstrap.min.js" />
+	<h:outputScript name="js/scripts.js" />
+</h:head>
+
+<h:body>
+	<div class="container">
+
+
+		<ui:insert name="header">
+			<ui:include src="header.xhtml" />
+		</ui:insert>
+
+		<div class="container-fluid">
+		    <div class="row">
+		      <div class="col col-sm-6">
+		        <h1><a href="#" title="Clients">Clients</a>
+		          <p class="lead">Liste des clients</p></h1>
+		      </div>
+		    </div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+
+					<div class="panel">
+						<div class="panel-body">
+
+							<ui:insert name="Content"></ui:insert>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<ui:insert name="footer">
+					<ui:include src="footer.xhtml" />
+				</ui:insert>
+			</div>
+		</div>
+	</div>
+</h:body>
+</html>

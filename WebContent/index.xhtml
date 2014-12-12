@@ -1,0 +1,55 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    template="Template/layout.xhtml">
+
+<ui:define name="Content">
+	 	
+  			<div class="col col-sm-3">
+              	<div id="sidebar">
+      			<ul class="nav nav-stacked">
+                    <li><h3 class="highlight">Actions <i class="glyphicon glyphicon-dashboard pull-right"></i></h3></li>
+                  	<li><a href="#">Listing</a></li>
+                  	<li><a href="#">Editer</a></li>
+          			<li><a href="#">Supprimer</a></li>
+				</ul>
+               	</div>
+               </div>
+      		<div class="col col-sm-9">
+      		<h2>Clients</h2>
+      		<div class="table-responsive">
+                <table class="table table-hover table-striped">
+                <tr>
+                	<th>N°Client</th>
+                	<th>Nom</th>
+                	<th>Telephone</th>
+                	<th>E-Mail</th>
+                	<th>Adresse</th>
+                	<th>CP</th>
+                	<th>Ville</th>
+                </tr>
+                <tr>
+	                <td>0</td>
+	                <td>AAA</td>
+	                <td>0949382738</td>
+	                <td>test@live.fr</td>
+	                <td>1 rue des dédés</td>
+	                <td>31000</td>
+	                <td>Tamer</td>
+	            </tr>
+	            <tr>
+	                <td>0</td>
+	                <td>AAA</td>
+	                <td>0949382738</td>
+	                <td>test@live.fr</td>
+	                <td>1 rue des dédés</td>
+	                <td>31000</td>
+	                <td>Tamer</td>
+	            </tr>
+				</table>
+				</div>
+      		</div>
+</ui:define>
+</ui:composition>
+
