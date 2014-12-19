@@ -8,14 +8,18 @@
 
 		<div class="col col-sm-3">
 			<div id="sidebar">
-				<ul class="nav nav-stacked">
-					<li><h3 class="highlight">
-							Actions <i class="glyphicon glyphicon-dashboard pull-right"></i>
-						</h3></li>
-					<li><a href="#">Listing</a></li>
-					<li><a href="#">Editer</a></li>
-					<li><a href="#">Supprimer</a></li>
-				</ul>
+				<h:form>
+					<ul class="nav nav-stacked">
+
+						<li><h3 class="highlight">
+								Actions <i class="glyphicon glyphicon-dashboard pull-right"></i>
+							</h3></li>
+
+						<li><h:commandLink value="Listing" action="clientList" /></li>
+						<li><h:commandLink value="Editer" action="clientEdit" /></li>
+						<li><h:commandLink value="Supprimer" action="clientDel" /></li>
+					</ul>
+				</h:form>
 			</div>
 		</div>
 		<div class="col col-sm-9">

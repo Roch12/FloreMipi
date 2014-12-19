@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14183960914110" configfile="/FloreMipi/WebContent/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14183960914110" configfile="/FloreMipi/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="Client/clientList.xhtml" x="72" y="48" width="121" height="133" id="pf14190099521250" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" outlinks="pf14190099521261 pf14190112054157" inlinks="pf14190104119133 pf14190112054157" path="/Client/clientList.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Client/clientEdit.xhtml" x="487" y="60" id="pf14190099521262" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14190104119133 pf14190112115018" inlinks="pf14190099521261" path="/Client/clientEdit.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Client/clientEdit.xhtml" id="pf14190112115019" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" inlinks="pf14190112115018" path="Client/clientEdit.xhtml"/>
+  <links id="pf14190099521261" target="pf14190099521262" source="pf14190099521250" outcome="clientEdit"/>
+  <links id="pf14190104119133" target="pf14190099521250" source="pf14190099521262" outcome="clientList"/>
+  <links id="pf14190112054157" target="pf14190099521250" source="pf14190099521250" outcome="clientDel"/>
+  <links id="pf14190112115018" target="pf14190112115019" source="pf14190099521262" outcome="clientDel"/>
+</pageflow:Pageflow>
