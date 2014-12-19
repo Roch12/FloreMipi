@@ -1,0 +1,51 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	template="/Client/Template/clientLayout.xhtml">
+
+	<ui:define name="AchatContent">
+
+		<form class="form-horizontal">
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="firstName">Date de commande</label>
+				<div class="col-md-5">
+					<input id="firstName" name="firstName" placeholder=""
+						class="form-control input-md" type="date" />
+				</div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="lastName">Date de réception</label>
+				<div class="col-md-5">
+					<input id="lastName" name="lastName" placeholder=""
+						class="form-control input-md" type="date" />
+				</div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="number">Quantité</label>
+				<div class="col-md-5">
+					<input id="number" name="number" placeholder=""
+						class="form-control input-md" type="number" />
+				</div>
+			</div>
+
+
+			<!-- Button (Double) -->
+			<div class="pull-right">
+				<div class="col-md-12">
+					<button type="button" id="save" name="save" class="btn btn-success">Sauvegarder</button>
+					<button type="button" id="cancel" name="cancel" class="btn btn-danger">Annuler</button>
+				</div>
+			</div>
+		</form>
+
+
+	</ui:define>
+</ui:composition>
+
