@@ -13,13 +13,15 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/Maxime/Desktop/spring-tool-suite-3.6.2.RELEASE-e4.4.1-win32-x86_64/sts-bundle/jstl-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Maxime/Desktop/spring-tool-suite-3.6.2.RELEASE-e4.4.1-win32-x86_64/sts-bundle/primefaces-5.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JSF 2.2 (Mojarra 2.2.0)">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 			<attribute name="owner.project.facets" value="jst.jsf"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Maxime/Documents/workspace-sts-3.6.2.RELEASE/FloreMipi/WebContent/WEB-INF/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Maxime/Documents/workspace-sts-3.6.2.RELEASE/FloreMipi/WebContent/WEB-INF/lib/primefaces-5.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Maxime/Documents/workspace-sts-3.6.2.RELEASE/FloreMipi/WebContent/WEB-INF/lib/rewrite-config-prettyfaces.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Maxime/Documents/workspace-sts-3.6.2.RELEASE/FloreMipi/WebContent/WEB-INF/lib/rewrite-servlet.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
