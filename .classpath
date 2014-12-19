@@ -19,9 +19,9 @@
 			<attribute name="owner.project.facets" value="jst.jsf"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Maxime/Documents/workspace-sts-3.6.2.RELEASE/FloreMipi/WebContent/WEB-INF/lib/jstl-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Maxime/Documents/workspace-sts-3.6.2.RELEASE/FloreMipi/WebContent/WEB-INF/lib/primefaces-5.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Maxime/Documents/workspace-sts-3.6.2.RELEASE/FloreMipi/WebContent/WEB-INF/lib/rewrite-config-prettyfaces.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Maxime/Documents/workspace-sts-3.6.2.RELEASE/FloreMipi/WebContent/WEB-INF/lib/rewrite-servlet.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/primefaces-5.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/rewrite-config-prettyfaces.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/rewrite-servlet.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
