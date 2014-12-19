@@ -10,5 +10,15 @@
 			<default-locale>en</default-locale>
 		</locale-config>
 	</application>
+	<managed-bean>
+		<managed-bean-name>ClientBean</managed-bean-name>
+		<managed-bean-class>com.floremipi.model.ClientBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>clientList</property-name>
+			<property-class>java.util.ArrayList</property-class>
+			<list-entries></list-entries>
+		</managed-property>
+	</managed-bean>
 
 </faces-config>

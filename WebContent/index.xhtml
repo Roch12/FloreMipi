@@ -2,6 +2,7 @@
     xmlns:ui="http://java.sun.com/jsf/facelets"
     xmlns:h="http://java.sun.com/jsf/html"
     xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
     template="/Template/layout.xhtml">
 
 <ui:define name="Content">
@@ -23,30 +24,20 @@
                 <tr>
                 	<th>N°Client</th>
                 	<th>Nom</th>
+                	<th>Prénom</th>
                 	<th>Telephone</th>
                 	<th>E-Mail</th>
-                	<th>Adresse</th>
-                	<th>CP</th>
-                	<th>Ville</th>
                 </tr>
-                <tr>
-	                <td>0</td>
-	                <td>AAA</td>
-	                <td>0949382738</td>
-	                <td>test@live.fr</td>
-	                <td>1 rue des dédés</td>
-	                <td>31000</td>
-	                <td>Tamer</td>
+               <c:forEach var="item" items="#{ClientBean.clientList}">
+				<tr>
+	                <td>#{item.id}</td>
+	                <td>#{item.name}</td>
+	                <td>#{item.firstName}</td>
+	                <td>#{item.phone}</td>
+	                <td>#{item.email}</td>
 	            </tr>
-	            <tr>
-	                <td>0</td>
-	                <td>AAA</td>
-	                <td>0949382738</td>
-	                <td>test@live.fr</td>
-	                <td>1 rue des dédés</td>
-	                <td>31000</td>
-	                <td>Tamer</td>
-	            </tr>
+		          </c:forEach>
+                
 				</table>
 				</div>
       		</div>
