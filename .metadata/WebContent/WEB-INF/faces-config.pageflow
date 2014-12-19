@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14183960914110" configfile="/FloreMipi/WebContent/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="Client/clientList.xhtml" x="72" y="48" width="121" height="133" id="pf14190099521250" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" outlinks="pf14190099521261 pf14190112054157" inlinks="pf14190104119133 pf14190112054157" path="/Client/clientList.xhtml"/>
-  <nodes xsi:type="pageflow:PFPage" name="Client/clientEdit.xhtml" x="487" y="60" id="pf14190099521262" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14190104119133 pf14190112115018" inlinks="pf14190099521261" path="/Client/clientEdit.xhtml"/>
-  <nodes xsi:type="pageflow:PFPage" name="Client/clientEdit.xhtml" id="pf14190112115019" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" inlinks="pf14190112115018" path="Client/clientEdit.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Client/clientList.xhtml" x="72" y="48" width="121" height="133" id="pf14190099521250" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" outlinks="pf14190099521261 pf14190112054157" inlinks="pf14190104119133 pf14190112054157" path="/Client/clientList.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Client/clientEdit.xhtml" x="480" y="132" id="pf14190099521262" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14190104119133 pf14190112115018" inlinks="pf14190099521261" path="/Client/clientEdit.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Client/clientEdit.xhtml" x="432" id="pf14190112115019" referenceLink="//@navigationRule.3/@navigationCase.1/@toViewId|" inlinks="pf14190112115018" path="Client/clientEdit.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Stock/stockList.xhtml" x="143" y="372" id="pf141901147136110" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf141901149442314 pf141901160966517" path="/Stock/stockList.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Stock/stockEdit.xhtml" x="434" y="372" id="pf141901147136113" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf141901151522815 pf141901161901619" inlinks="pf141901149442314 pf141901151522815" path="/Stock/stockEdit.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Client/stockEdit.xhtml" id="pf141901160966518" referenceLink="//@navigationRule.3/@navigationCase.1/@toViewId|" inlinks="pf141901160966517 pf141901161901619" path="Client/stockEdit.xhtml"/>
   <links id="pf14190099521261" target="pf14190099521262" source="pf14190099521250" outcome="clientEdit"/>
   <links id="pf14190104119133" target="pf14190099521250" source="pf14190099521262" outcome="clientList"/>
   <links id="pf14190112054157" target="pf14190099521250" source="pf14190099521250" outcome="clientDel"/>
   <links id="pf14190112115018" target="pf14190112115019" source="pf14190099521262" outcome="clientDel"/>
+  <links id="pf141901149442314" target="pf141901147136113" source="pf141901147136110" outcome="sotckEdit"/>
+  <links id="pf141901151522815" target="pf141901147136113" source="pf141901147136113" outcome="sotckList"/>
+  <links id="pf141901160966517" target="pf141901160966518" source="pf141901147136110" outcome="stockDel"/>
+  <links id="pf141901161901619" target="pf141901160966518" source="pf141901147136113" outcome="stockDel"/>
 </pageflow:Pageflow>

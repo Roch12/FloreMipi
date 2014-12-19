@@ -14,6 +14,16 @@
 		<view-id value="/faces/Client/clientEdit.xhtml" />
 	</url-mapping>
 	
+		<url-mapping id="StockList">
+		<pattern value="/stock" />
+		<view-id value="/faces/Stock/stockList.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="StockEdit">
+		<pattern value="/stock/edit" />
+		<view-id value="/faces/Stock/stockEdit.xhtml" />
+	</url-mapping>
+	
 	
 
 </pretty-config>

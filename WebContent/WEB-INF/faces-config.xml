@@ -43,5 +43,29 @@
 			<to-view-id>Client/clientEdit.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
+	<navigation-rule>
+		<display-name>Stock/stockList.xhtml</display-name>
+		<from-view-id>/Stock/stockList.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>sotckEdit</from-outcome>
+			<to-view-id>/Stock/stockEdit.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>stockDel</from-outcome>
+			<to-view-id>Client/stockEdit.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>Stock/stockEdit.xhtml</display-name>
+		<from-view-id>/Stock/stockEdit.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>sotckList</from-outcome>
+			<to-view-id>/Stock/stockEdit.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>stockDel</from-outcome>
+			<to-view-id>Client/stockEdit.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 
 </faces-config>
