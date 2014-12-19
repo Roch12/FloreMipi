@@ -7,7 +7,8 @@
 
 	<ui:define name="ClientContent">
 
-		<form>
+		<form class="form-horizontal">
+		
 			<!-- Text input-->
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="firstName">Prenom</label>
@@ -45,11 +46,10 @@
 			</div>
 
 			<!-- Button (Double) -->
-			<div class="form-group">
-				<label class="col-md-4 control-label" for="save"></label>
-				<div class="col-md-8">
-					<button id="save" name="save" class="btn btn-success">Sauvegarder</button>
-					<button id="cancel" name="cancel" class="btn btn-danger">Annuler</button>
+			<div class="pull-right">
+				<div class="col-md-12">
+					<button type="button" id="save" name="save" class="btn btn-success">Sauvegarder</button>
+					<button type="button" id="cancel" name="cancel" class="btn btn-danger">Annuler</button>
 				</div>
 			</div>
 		</form>
