@@ -2,10 +2,14 @@
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14183960914110" configfile="/FloreMipi/WebContent/WEB-INF/faces-config.xml">
   <nodes xsi:type="pageflow:PFPage" name="Client/clientList.xhtml" x="72" y="48" width="121" height="133" id="pf14190099521250" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" outlinks="pf14190099521261 pf14190112054157" inlinks="pf14190104119133 pf14190112054157" path="/Client/clientList.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="Client/clientEdit.xhtml" x="480" y="132" id="pf14190099521262" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14190104119133 pf14190112115018" inlinks="pf14190099521261" path="/Client/clientEdit.xhtml"/>
-  <nodes xsi:type="pageflow:PFPage" name="Client/clientEdit.xhtml" x="432" id="pf14190112115019" referenceLink="//@navigationRule.3/@navigationCase.1/@toViewId|" inlinks="pf14190112115018" path="Client/clientEdit.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Client/clientEdit.xhtml" x="432" id="pf14190112115019" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" inlinks="pf14190112115018" path="Client/clientEdit.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="Stock/stockList.xhtml" x="143" y="372" id="pf141901147136110" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf141901149442314 pf141901160966517" path="/Stock/stockList.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="Stock/stockEdit.xhtml" x="434" y="372" id="pf141901147136113" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf141901151522815 pf141901161901619" inlinks="pf141901149442314 pf141901151522815" path="/Stock/stockEdit.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="Client/stockEdit.xhtml" id="pf141901160966518" referenceLink="//@navigationRule.3/@navigationCase.1/@toViewId|" inlinks="pf141901160966517 pf141901161901619" path="Client/stockEdit.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Achat/achatEdit.xhtml" id="pf14213202795726" referenceLink="//@navigationRule.7/@navigationCase.1/@toViewId|" outlinks="pf14213202795727 pf14219152016170" inlinks="pf14213202795727 pf14219152016171 pf14219152016170" path="/Achat/achatEdit.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Achat/achatList.xhtml" id="pf142132037614714" referenceLink="//@navigationRule.6/@navigationCase.1/@toViewId|" outlinks="pf142132038126917 pf14219152016171" inlinks="pf142132038126917" path="/Achat/achatList.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Commmande/commandeList.xhtml" id="pf14219152488802" referenceLink="//@navigationRule.6/@navigationCase.1/@toViewId|" outlinks="pf14219152488804 pf142191525802410" inlinks="pf142191525802410" path="/Commmande/commandeList.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Commmande/commandeEdit.xhtml" id="pf14219152488809" referenceLink="//@navigationRule.7/@navigationCase.1/@toViewId|" outlinks="pf142191527495214 pf142191528181715" inlinks="pf14219152488804 pf142191527495214 pf142191528181715" path="/Commmande/commandeEdit.xhtml"/>
   <links id="pf14190099521261" target="pf14190099521262" source="pf14190099521250" outcome="clientEdit"/>
   <links id="pf14190104119133" target="pf14190099521250" source="pf14190099521262" outcome="clientList"/>
   <links id="pf14190112054157" target="pf14190099521250" source="pf14190099521250" outcome="clientDel"/>
@@ -14,4 +18,12 @@
   <links id="pf141901151522815" target="pf141901147136113" source="pf141901147136113" outcome="sotckList"/>
   <links id="pf141901160966517" target="pf141901160966518" source="pf141901147136110" outcome="stockDel"/>
   <links id="pf141901161901619" target="pf141901160966518" source="pf141901147136113" outcome="stockDel"/>
+  <links id="pf14213202795727" target="pf14213202795726" source="pf14213202795726" outcome="achatList"/>
+  <links id="pf142132038126917" target="pf142132037614714" source="pf142132037614714" outcome="achatDel"/>
+  <links id="pf14219152016171" target="pf14213202795726" source="pf142132037614714" outcome="achatEdit"/>
+  <links id="pf14219152016170" target="pf14213202795726" source="pf14213202795726" outcome="achatDel"/>
+  <links id="pf14219152488804" target="pf14219152488809" source="pf14219152488802" outcome="commandeEdit"/>
+  <links id="pf142191525802410" target="pf14219152488802" source="pf14219152488802" outcome="commandeDel"/>
+  <links id="pf142191527495214" target="pf14219152488809" source="pf14219152488809" outcome="commandeList"/>
+  <links id="pf142191528181715" target="pf14219152488809" source="pf14219152488809" outcome="commandeDel"/>
 </pageflow:Pageflow>

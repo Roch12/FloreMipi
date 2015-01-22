@@ -23,5 +23,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/primefaces-5.0.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/rewrite-config-prettyfaces.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/rewrite-servlet.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

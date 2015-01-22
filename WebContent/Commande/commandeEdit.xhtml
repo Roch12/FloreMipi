@@ -1,0 +1,45 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://Commande/Template/commandeLayout.xhtml"
+	template="/Commande/Template/commandeLayout.xhtml">
+
+	<ui:define name="CommandeContent">
+
+		<div class="col col-sm-9">
+			<table>
+				<tr>
+					<td style="width: 405px;">
+						<div class="fields">
+							<div class="flied line">
+								<LABEL>Date de Commande</LABEL><input style="width: 253px;" />
+
+							</div>
+							<div class="flied line">
+								<LABEL>Date de Livraison</LABEL> <input style="width: 256px;"></input>
+							</div>
+							<div class="flied line">
+								<LABEL>Lieu de livraison</LABEL> <input style="width: 257px;"></input>
+							</div>
+
+							<div>
+								<LABEL>Client</LABEL> <A href="#"> Selection client</A>
+							</div>
+						</div>
+					</td>
+					<td style="width: 562px;">
+						<div class="listeProduits" style="height: 213px; width: 449px">
+							<input type="text" value="Vignes de blabla" style="width: 283px;"></input>
+							<input type="text" value="Arbuste" style="width: 284px;"></input>
+							<input type="text" value="Rosier" style="width: 285px;"></input>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+
+	</ui:define>
+</ui:composition>
+

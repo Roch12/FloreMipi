@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces" 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
                       http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
 
 	<url-mapping id="ClientList">
@@ -13,8 +13,8 @@
 		<pattern value="/client/edit" />
 		<view-id value="/faces/Client/clientEdit.xhtml" />
 	</url-mapping>
-	
-		<url-mapping id="StockList">
+
+	<url-mapping id="StockList">
 		<pattern value="/stock" />
 		<view-id value="/faces/Stock/stockList.xhtml" />
 	</url-mapping>
@@ -23,7 +23,26 @@
 		<pattern value="/stock/edit" />
 		<view-id value="/faces/Stock/stockEdit.xhtml" />
 	</url-mapping>
-	
-	
+
+	<url-mapping id="AchatList">
+		<pattern value="/achat" />
+		<view-id value="/faces/Achat/achatList.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="AchatEdit">
+		<pattern value="/achat/edit" />
+		<view-id value="/faces/Achat/achatEdit.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="CommandeList">
+		<pattern value="/commande" />
+		<view-id value="/faces/Commande/commandeList.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="CommandeEdit">
+		<pattern value="/commande/edit" />
+		<view-id value="/faces/Commande/commandeEdit.xhtml" />
+	</url-mapping>
+
 
 </pretty-config>

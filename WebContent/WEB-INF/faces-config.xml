@@ -67,5 +67,56 @@
 			<to-view-id>Client/stockEdit.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
+	<navigation-rule>
+		<display-name>Achat/achatList.xhtml</display-name>
+		<from-view-id>/Achat/achatList.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>achatEdit</from-outcome>
+			<to-view-id>/Achat/achatEdit.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>achatDel</from-outcome>
+			<to-view-id>/Achat/achatList.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>Achat/achatEdit.xhtml
+		</display-name>
+		<from-view-id>/Achat/achatEdit.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>achatList</from-outcome>
+			<to-view-id>/Achat/achatEdit.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>achatDel</from-outcome>
+			<to-view-id>/Achat/achatEdit.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+<navigation-rule>
+		<display-name>Commmande/commandeList.xhtml</display-name>
+		<from-view-id>/Commmande/commandeList.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>commandeEdit</from-outcome>
+			<to-view-id>/Commmande/commandeEdit.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>commandeDel</from-outcome>
+			<to-view-id>/Commmande/commandeList.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>Commmande/commandeEdit.xhtml
+		</display-name>
+		<from-view-id>/Commmande/commandeEdit.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>commandeList</from-outcome>
+			<to-view-id>/Commmande/commandeEdit.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>commandeDel</from-outcome>
+			<to-view-id>/Commmande/commandeEdit.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 
 </faces-config>
